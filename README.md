@@ -8,6 +8,7 @@ This package is a Motion capture OptiTrack driver for ROS. You can receive rigid
 $ mkdir ~/motion_ws
 $ cd ~/motion_ws
 $ mkdir src
+$ cd src
 $ catkin_init_workspace
 $ git clone https://github.com/kentegrate/mocap_ros
 ```
@@ -15,12 +16,12 @@ $ git clone https://github.com/kentegrate/mocap_ros
 ## Build the workspace
 ```
 $ cd ~/motion_ws
-$ cakin_make
+$ catkin_make
 ```
 
 ## Add the workspace setup.bash to .bashrc
 ```
-$ echo "~/motion_ws/devel/setup.bash" >> ~/.bashrc
+$ echo "source ~/motion_ws/devel/setup.bash" >> ~/.bashrc
 $ source ~/.bashrc
 ```
 
