@@ -197,7 +197,7 @@ int main(int argc, char* argv[])
 
   ros::init(argc, argv, "mocap_ros");
   ros::NodeHandle nh;
-  motion_pub = nh.advertise<geometry_msgs::PoseStamped>("mocap/pose", 10);
+  motion_pub = nh.advertise<geometry_msgs::PoseStamped>("mavros/vision_pose/pose", 10);
   
    // Version number of the NatNet protocol, as reported by the server.
    unsigned char natNetMajor;
