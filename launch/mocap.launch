@@ -1,4 +1,5 @@
 <launch>
 	<param name="mocap_ros/local_addr" type="str" value="192.168.11.3"/>
-	<param name="mocap_ros/server_addr" type="str" value="192.168.11.4"/>		<node pkg="mocap_ros" type="mocap_ros_node" name="mocap_ros_node"/>
+	<param name="mocap_ros/server_addr" type="str" value="192.168.11.4"/>
+	<node pkg="mocap_ros" type="mocap_ros_node" name="mocap_ros_node"/>
 </launch>			    

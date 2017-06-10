@@ -49,6 +49,7 @@ $ roslaunch mocap_ros mocap.launch
 ## Published topics
 ### /mocap/pose
 Type : geometry_msgs::PoseStamped
+
 This is the 6DoF Position of the rigid body broadcasted from the natnet with timestamp.
 
 
