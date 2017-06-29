@@ -94,7 +94,7 @@ void readOpts( int argc, char* argv[] )
 geometry_msgs::PoseStamped natNet2PoseMsg(Point3f location, Quaternion4f orientation){
   geometry_msgs::PoseStamped msg;
   msg.header.stamp = ros::Time::now();
-  msg.header.frame_id = "base_link";
+  msg.header.frame_id = "fcu";
   msg.pose.position.x = location.x;
   msg.pose.position.y = -location.z;
   msg.pose.position.z = location.y;
