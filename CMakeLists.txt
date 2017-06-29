@@ -143,6 +143,19 @@ add_executable(mocap_ros_node src/mocap_ros_node.cpp)
    ${Boost_LIBRARIES}
  )
 
+add_executable(setpoint_sender src/setpoint_sender.cpp)
+
+## Add cmake target dependencies of the executable
+## same as for the library above
+# add_dependencies(mocap_ros_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+
+## Specify libraries to link a library or executable target against
+ target_link_libraries(setpoint_sender
+   ${catkin_LIBRARIES}
+   ${Boost_LIBRARIES}
+ )
+
+
 #############
 ## Install ##
 #############
